@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COVID-19's Spread in the U.S.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Code+Pro:wght@700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scroller">
+      <div id="text_and_viz_container">
+        <div id="title_container">
+          <h1><span id="covid">COVID-19</span> in the U.S.</h1>
+        </div>
+        <div class="flex">
+        <div id="scene_text_container" class="column">
+        <div id="february_text" class="scene_text">
+            <h2>January - February 2020</h2>
+            <p>The first reported case of COVID-19 in the U.S. was in Washington State in late January. By the beginning of February, cases had been confirmed in multiple states, including California and Illinois. The number of confirmed cases continued to grow throughout February, at first only among people who had recently returned from COVID hot spots abroad.</p>
+            <p> On February 26th, the first case of community transmission within the US was confirmed. That same day, at a press conference, President Trump stated, "When you have 15 people, and the 15 within a couple of days is going to be down close to zero, that's a pretty good job we've done."</p>
+        </div>
+        <div id="march_text" class="scene_text" style="display: none">
+            <h2>March 2020</h2>
+            <p>With cases on the rise in March, strict travel restrictions were put in place, sporting events were canceled, and schools in several states transitioned to emergency online learning. Some states, including California, issued statewide stay-at-home orders.</p>
+            <p>Despite these measures, the COVID-19 case count exploded. On March 8th, the number of confirmed cases passed 500. By March 15th, it had passed 3,000. By March 31, more than 188,000 cases had been confirmed in the US.</p>
+        </div>
+        <div id="april_text" class="scene_text" style="display: none">
+            <h2>April 2020</h2>
+            <p>On April 3, the CDC recommended that Americans wear masks in public to help slow the virus's spread. As case counts and deaths continued to rise across the country, President Trump announced that the US would stop funding the WHO and anti-lockdown demonstrators organized protests against stay-at-home orders. Despite a still-lacking testing infrastructure, several states announced plans to begin reopening their economies.</p>
+            <p>By the end of April, total cases in the US had passed 1 million, with more than 60,000 deaths.</p>
+        </div>
+        <div id="may_text" class="scene_text" style="display: none">
+            <h2>May 2020</h2>
+            <p>New case count reports began to plateau on a national level, as conditions in regions like the northeast, which had been hit hard early on, started to improve. In other parts of the country, however, cases began to climb even as state economies reopened. 
+            <p>On May 5th, President Trump announced plans to "wind down" the coronavirus task force. He reversed course a day later. By the end of May, the US reached almost 1.8 million total confirmed cases.</p>
+        </div>
+        <div id="june_text" class="scene_text" style="display: none">
+            <h2>June 2020</h2>
+            <p>In June, mass protests began across the country in response to the killing of George Floyd on May 31st. Although there was initially some worry that these large gatherings would lead to a spike in COVID-19 cases, this does not appear to have happened.</p>
+            <p>During June, several states that had reopened early, including Arizona, and Florida, began to see sharp increases in cases. Former hot splots, like New York and other northeastern states, continued to recover, and new hot spots began to emerge across the southern and western US.</p>
+        </div>
+        <div id="july_text" class="scene_text" style="display: none">
+            <h2>July 2020</h2>
+            <p>July saw cases continue to surge throughout the southern and western United States, with Arizona, Florida, and Texas hit particularly hard. Case counts across the US climbed steeply, and the US passed 3 million total confirmed cases on July 7.</p>
+            <p>On July 12th, Florida reported 15,000 COVID-19 cases in a single day, surpassing the single-day record for any state (which was previously New York, with around 12,000 cases at its peak).</p>
+        </div>
+        <div id="interactive_text" class="scene_text" style="display: none">
+          <h2 id="curr_date">Explore the Data</h2>
+          <p>Click on any bar in the graph below for information about the spread of COVID-19 in the US on that date.</p>
+          <p>Hovering over a state in the map on the right will display the total number of cases reported in that state as of the selected date. States are color-coded by total number of reported cases per capita.</p>
+        </div>
+          
+        </div>
+        <div id="map_container" class="column">
+          <svg id="map" viewbox="0 0 960 600">
+          </svg>
+        </div>
+        </div>
+        <div>
+          <svg id="bar_chart" viewbox="0 0 1020 400">
+          </svg>
+        </div>
+      </div>
+        <script src="https://d3js.org/d3.v5.js"></script>
+        <script src="https://d3js.org/topojson.v2.min.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="covid_viz.js"></script>
+    </div>
+</body>
+</html>
