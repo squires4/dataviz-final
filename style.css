@@ -33,6 +33,55 @@ p {
   font-family: "Lato";
 }
 
+@media (max-width:1000px) {
+  p {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 65px;
+    letter-spacing: 2px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+
+
+@media (max-width:800px) {
+  p {
+    font-size: 11px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width:600px) {
+  p {
+    font-size: 9px;
+  }
+  
+  h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+}
+
 #covid {
   color: #FF6C76;
 }
@@ -119,7 +168,6 @@ text {
 
 .flex {
   display: flex;
-  min-width: 800px;
 }
 
 .column {
