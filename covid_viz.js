@@ -693,7 +693,7 @@ let us_data = d3.csv("us.csv").then(function (data_us) {
                   .style("opacity", 0);
           
            $("#text_and_viz_container").css("top", 
-                                            (Math.max(0, $("#title_container").height() - scrollCurr) + 60) + "px");
+                                            (Math.max(0, $("#title_container").height() - scrollCurr + 60)) + "px");
         }
       });
     });
